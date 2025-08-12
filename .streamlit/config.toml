@@ -1,0 +1,38 @@
+# Streamlit Configuration - Local Development
+# For targeted sharing and testing
+
+[server]
+# Server settings for local access
+port = 8501
+headless = false
+runOnSave = true
+allowRunOnSave = true
+maxUploadSize = 200  # Max file size in MB for CSV/Excel uploads
+
+[browser]
+# Browser settings
+serverAddress = "localhost"
+serverPort = 8501
+gatherUsageStats = false
+
+[client]
+# Client settings
+showErrorDetails = true
+
+[runner]
+# Runner settings
+magicEnabled = true
+postScriptGC = true
+fastReruns = true
+
+[logger]
+# Logging settings
+level = "info"
+
+# Theme settings
+[theme]
+primaryColor = "#1f77b4"  # Blue color matching the app theme
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#f0f2f6"
+textColor = "#262730"
+font = "sans serif"
