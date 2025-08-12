@@ -17,7 +17,8 @@ An intelligent Streamlit application for analyzing CSV/Excel data with AI-powere
    - Go to [share.streamlit.io](https://share.streamlit.io)
    - Connect your GitHub repository
    - Set main file: `ai_csv_analyzer.py`
-   - Use requirements file: `requirements_production.txt`
+   - Use requirements file: `requirements_minimal.txt` (for fastest deployment)
+   - Alternative: `requirements.txt` (standard) or `requirements_production.txt` (full features)
 
 3. **Configure API Keys (Optional):**
    - In Streamlit Cloud → App Settings → Secrets
@@ -52,7 +53,9 @@ streamlit run ai_csv_analyzer.py
 
 - `.streamlit/config.toml` - Streamlit settings
 - `.streamlit/secrets.toml.example` - API keys template
-- `requirements_production.txt` - Production dependencies
+- `requirements_minimal.txt` - Essential packages only (recommended for Streamlit Cloud)
+- `requirements.txt` - Standard dependencies
+- `requirements_production.txt` - Full feature set
 - `Procfile` - Heroku deployment configuration
 
 ## 🔐 Environment Variables
